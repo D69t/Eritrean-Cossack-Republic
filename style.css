@@ -1,0 +1,87 @@
+body {
+    font-family: 'Roboto Slab', serif; /* Используем шрифт Roboto Slab */
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+header {
+    background-color: #212121;
+    color: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #424242;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+#hero {
+    background-color: #303030;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Добавили тень */
+}
+
+#hero h2 {
+    color: #fff;
+}
+
+#hero p {
+    color: #ccc;
+}
+
+#hero button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: not-allowed; /* Изменяем курсор */
+    opacity: 0.7; /* Снижаем прозрачность */
+}
+
+#hero button:hover {
+    background-color: #555; /* Убираем изменение цвета при наведении */
+}
+
+footer {
+    background-color: #212121;
+    color: #aaa;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #424242;
+}
+
