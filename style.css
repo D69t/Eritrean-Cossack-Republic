@@ -373,3 +373,64 @@
       flex: 1;
     }
   }
+
+/* Обновленные стили для голосования */
+.vote-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.vote-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.vote-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.vote-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.vote-for {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: var(--success);
+}
+
+.vote-against {
+  background-color: rgba(244, 67, 54, 0.1);
+  color: var(--danger);
+}
+
+/* Статусы */
+.status {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.status.consideration {
+  background-color: rgba(255, 152, 0, 0.1);
+  color: var(--secondary);
+}
+
+.status.approved {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: var(--success);
+}
+
+.status.rejected {
+  background-color: rgba(244, 67, 54, 0.1);
+  color: var(--danger);
+}
