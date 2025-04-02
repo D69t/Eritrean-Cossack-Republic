@@ -10,32 +10,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Модальное окно входа -->
+    <div id="admin-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Вход для администратора</h2>
+            <form id="admin-login-form">
+                <div class="form-group">
+                    <label for="admin-login">Логин:</label>
+                    <input type="text" id="admin-login" required>
+                </div>
+                <div class="form-group">
+                    <label for="admin-password">Пароль:</label>
+                    <input type="password" id="admin-password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Войти</button>
+            </form>
+        </div>
+    </div>
 
     <header>
         <nav>
-            <h1>RR</h1>
+            <h1 id="admin-access">RR</h1>
             <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Политика</a></li>
-                <li><a href="#">Партия</a></li>
-                <li><a href="#">Связь</a></li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="politics.html">Политика</a></li>
+                <li><a href="laws.html">Законы</a></li>
+                <li><a href="bills.html">Законопроекты</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="hero">
-            <h2>Eritrean-Cossack Republic!</h2>
-            <p>СКОРО...</p>
-            <button disabled>СКОРО</button>
+        <section class="section">
+            <h2>Eritrean-Cossack Republic</h2>
+            <p>Добро пожаловать на официальный портал Республики</p>
+            <button class="btn btn-disabled">СКОРО</button>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Eritrean-Cossack Republic</p>
+        <p>&copy; 2025 Eritrean-Cossack Republic. Все права защищены.</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
