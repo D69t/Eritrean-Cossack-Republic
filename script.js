@@ -1,5 +1,18 @@
 // Хранилище данных
 class BillsStorage {
+addComment(billId, user, text) {
+  const bill = this.bills.find(b => b.id === billId);
+  if (bill) {
+    if (!bill.comments) bill.comments = [];
+    bill.comments.push({
+      id: 'comment-' + Date.now(),
+      user,
+      text,
+      date: new Date().toISOString()
+    });
+    this.save();
+  }
+}
   constructor() {
     this.bills = JSON.parse(localStorage.getItem('bills')) || [];
     this.initSampleData();
